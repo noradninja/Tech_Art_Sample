@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 105815143}
   - component: {fileID: 105815144}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ECU_Vine_Rocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 106755245}
   - component: {fileID: 106755246}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CU
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1490,12 +1490,12 @@ Transform:
   m_GameObject: {fileID: 895541686}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.204076, y: 3.7487783, z: -0.2764219}
+  m_LocalPosition: {x: 86.50408, y: 27.348778, z: 9.723578}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1660547038}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1866902593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &895541688
 MonoBehaviour:
@@ -1618,7 +1618,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1033551789}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CU_Layers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1868,7 +1868,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1155725442}
   - component: {fileID: 1155725443}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ECU
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1916,7 +1916,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1171708823}
   - component: {fileID: 1171708824}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CU_Foliage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2482,7 +2482,7 @@ Transform:
   m_GameObject: {fileID: 1520656864}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -83.9, y: -25.7, z: -10}
+  m_LocalPosition: {x: -84.3, y: -23.8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2843,7 +2843,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 895541687}
   m_Father: {fileID: 1520656868}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1866902594
@@ -2927,7 +2928,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2005532620}
   - component: {fileID: 2005532621}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ECU_Vine_Branch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3259,7 +3260,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 1520656868}
   - {fileID: 1033551789}
-  - {fileID: 895541687}
   - {fileID: 566152706}
   - {fileID: 1719603278}
   - {fileID: 1298970401}
