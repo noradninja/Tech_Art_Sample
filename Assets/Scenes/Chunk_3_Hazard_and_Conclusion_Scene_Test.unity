@@ -1881,6 +1881,7 @@ GameObject:
   - component: {fileID: 1520656866}
   - component: {fileID: 1520656865}
   - component: {fileID: 1520656869}
+  - component: {fileID: 1520656870}
   m_Layer: 0
   m_Name: BG Camera
   m_TagString: MainCamera
@@ -1976,7 +1977,7 @@ Transform:
   m_GameObject: {fileID: 1520656864}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.9, y: -102.3, z: -10}
+  m_LocalPosition: {x: -3.7, y: -40.9, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2002,6 +2003,23 @@ MonoBehaviour:
   intensity: 0.00035
   threshold: 0.05
   softKnee: 1
+--- !u!114 &1520656870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520656864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9bb4b9db612f54478480ac52eb3aec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skyboxMaterial: {fileID: 2100000, guid: 44b1071840cef474d8eb7c466ccbda9c, type: 2}
+  skyboxColorA: {r: 0.51278055, g: 0.73, b: 0.5020976, a: 1}
+  skyBoxColorB: {r: 0.4390538, g: 0.46642357, b: 0.638, a: 1}
+  transitionTime: 0.5
+  isVisible: 0
 --- !u!1 &1555860926
 GameObject:
   m_ObjectHideFlags: 0
@@ -2304,7 +2322,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1866902593}
   - component: {fileID: 1866902596}
-  - component: {fileID: 1866902595}
   - component: {fileID: 1866902594}
   m_Layer: 0
   m_Name: Sprite_Camera
@@ -2348,14 +2365,6 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
---- !u!81 &1866902595
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866902592}
-  m_Enabled: 1
 --- !u!20 &1866902596
 Camera:
   m_ObjectHideFlags: 0
