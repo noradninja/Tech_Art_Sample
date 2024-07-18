@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class LayerParallax : MonoBehaviour
 {
     private float startingPosX, startingPosY; 
@@ -17,9 +18,9 @@ public class LayerParallax : MonoBehaviour
     private void Update()
     {
         Vector3 position = mainCamera.transform.position;
-        float distanceX = position.x * (amountOfParallax * 0.250f);
-        float distanceY = position.y * (amountOfParallax * 0.125f);
-        Vector3 newPosition = new Vector3(startingPosX + distanceX, startingPosY + distanceY, transform.position.z);
+        float distanceX = position.x * (amountOfParallax * 0.125f);
+        float distanceY = position.y * (amountOfParallax * 0.05125f);
+        Vector3 newPosition = new Vector3(startingPosX - distanceX, startingPosY - distanceY, transform.position.z);
         transform.position = newPosition;
     }
 }
