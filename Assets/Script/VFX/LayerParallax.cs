@@ -17,6 +17,10 @@ public class LayerParallax : MonoBehaviour
     
     private void Update()
     {
+        if (!Application.isPlaying)
+        {
+            transform.position = new Vector3(startingPosX, startingPosY, transform.position.z);
+        }
         Vector3 position = mainCamera.transform.position;
         float distanceX = position.x * (amountOfParallax * 0.15f);
         float distanceY = position.y * (amountOfParallax * 0.05125f);
