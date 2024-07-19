@@ -8,6 +8,7 @@ public class SkyboxColorChangeTrigger : MonoBehaviour
 {
     
     public Material skyboxMaterial;
+    public Material godRayMaterial;
     public Color skyboxColorA;
     public Color skyBoxColorB;
     public float transitionTime = 0.5f;
@@ -43,13 +44,13 @@ public class SkyboxColorChangeTrigger : MonoBehaviour
         
         if (nightTransition)
         {
-            StartCoroutine(CrossFadeSkyboxColor(skyboxColorA, skyBoxColorB, transitionTime));
+            StartCoroutine(CrossFadeSkyboxColor(skyboxColorA, skyBoxColorB, transitionTime, godRayMaterial));
             nightTransition = false;
         }
 
         if (dayTransition)
         {
-            StartCoroutine(CrossFadeSkyboxColor(skyBoxColorB, skyboxColorA, transitionTime));
+            StartCoroutine(CrossFadeSkyboxColor(skyBoxColorB, skyboxColorA, transitionTime, godRayMaterial));
             dayTransition = false;
         }
     }
@@ -62,13 +63,14 @@ public class SkyboxColorChangeTrigger : MonoBehaviour
             Gizmos.DrawIcon(transform.position, "Sky Gizmo.tiff", false, skyboxColorA);
     }
     
-    IEnumerator CrossFadeSkyboxColor(Color startingColor, Color endingColor, float duration)
+    IEnumerator CrossFadeSkyboxColor(Color startingColor, Color endingColor, float duration, Material mat)
     {
         float timer = 0;
         Color transitionalColor = startingColor;
         while (timer < duration)
         {
             transitionalColor = Color.Lerp(transitionalColor, endingColor, timer / duration);
+            mat.color = transitionalColor;
             skyboxMaterial.color = transitionalColor; 
             timer += Time.deltaTime;
             print(transitionalColor);
